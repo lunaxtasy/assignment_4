@@ -11,7 +11,7 @@ def is_palindrome(word):
     Returns True for palindromes and False for non-palindromes and empty strings
     """
 
-    #string checker, will raise ValueError if anything else but a string
+    #string checker, will raise ValueError if anything else but a string or empty strings
 
     if isinstance(word, str) is False:
         raise ValueError
