@@ -4,8 +4,6 @@ Assignment 4: Palindrome checker
 Palindrome checker main module
 """
 
-from collections import deque
-
 def is_palindrome(word):
     """
     This function checks to see if an entered string is a palindrome or not.
@@ -17,10 +15,7 @@ def is_palindrome(word):
 
     if isinstance(word, str) is False:
         raise ValueError
-
-    #checks length of deque, returns False for no characters in string
-
-    if (not (word and word.strip())):
+    elif not word.strip():
         palin_answer = False
 
     return palin_answer
