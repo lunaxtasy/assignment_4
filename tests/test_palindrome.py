@@ -21,11 +21,4 @@ def test_empty_string():
     `(/1)` `is_palindrome` returns `False` when called with an empty string.
     """
 
-    assert is_palindrome("") is None
-
-def test_a_is_a_palindrome():
-    """
-    `(/1)` `is_palindrome` returns `True` if called with `"a"`.
-    """
-
-    assert is_palindrome("a") is True
+    assert is_palindrome("") is False

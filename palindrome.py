@@ -13,10 +13,14 @@ def is_palindrome(word):
     Returns True for palindromes and False for non-palindromes and empty strings
     """
 
-    #string checker, will raise ValueError if anything else but a string or empty strings
+    #string checker, will raise ValueError if anything else but a string
 
     if isinstance(word, str) is False:
         raise ValueError
 
-    if len(deque(word)) == 1:
-        return True
+    #checks length of deque, returns False for no characters in string
+
+    if len(deque(word)) < 1:
+        palin_answer = False
+
+    return palin_answer
