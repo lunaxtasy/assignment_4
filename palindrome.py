@@ -5,6 +5,7 @@ Palindrome checker main module
 """
 
 from collections import deque
+import re
 
 def is_palindrome(word):
     """
@@ -25,10 +26,10 @@ def is_palindrome(word):
 
     #creating deque, also eliminating possibility of case-in-middle_of_word issue
 
-    characters = deque(word.lower())
+    characters = deque(re.sub(r"[^a-z0-9]","",word.lower()))
 
     #checking deque length, lengths of 1 are palindromes by their nature, either
-    # as one letter or the middle letter.
+    #as one letter or the middle letter.
     #Lengths of greater than or equal to 2 require matching
 
     if len(characters) == 1:

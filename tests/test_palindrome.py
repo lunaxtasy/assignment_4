@@ -68,7 +68,14 @@ def test_this_sentence_is_looooong():
 
 def test_sister():
     """
-    My sister is a palindrome... I can use her to test case
+    My sister is a palindrome... I can use her to test case detection
     """
 
     assert is_palindrome("HanNah") is True
+
+def test_no_punctuation_please():
+    """
+    Allows for palindromes that are split due to spaces and punctuation
+    """
+
+    assert is_palindrome("Eva, can I see bees in a cave?") is True
