@@ -50,3 +50,10 @@ def test_laval_is_a_palindrome():
     """
 
     assert is_palindrome("laval") is True
+
+def test_toronto_is_not_a_palindrome():
+    """
+    `(/1)` `is_palindrome` returns `False` when called with `"toronto"`.
+    """
+
+    assert is_palindrome("toronto") is False
