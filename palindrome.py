@@ -17,6 +17,6 @@ def is_palindrome(word):
 
     if isinstance(word, str) is False:
         raise ValueError
-    else:
-        if len(deque(word)) == 1:
-            return True
+
+    if len(deque(word)) == 1:
+        return True
