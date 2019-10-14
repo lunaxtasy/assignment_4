@@ -18,16 +18,17 @@ def is_palindrome(word):
     if isinstance(word, str) is False:
         raise ValueError
 
-    #if string isn't empty, determines if entry is palindrome
+    #determines if string is empty or just a white space, sets logic to False
 
     if not word.strip():
         palin_answer = False
 
-    #creating deque
+    #creating deque, also eliminating possibility of case-in-middle_of_word issue
 
-    characters = deque(word)
+    characters = deque(word.lower())
 
-    #checking deque length, lengths of 1 are palindromes. Lengths of greater than 2 require matching
+    #checking deque length, lengths of 1 are palindromes by their nature, either as one letter or the middle letter.
+    #Lengths of greater than or equal to 2 require matching
 
     if len(characters) == 1:
         palin_answer = True
@@ -37,6 +38,7 @@ def is_palindrome(word):
             beginning = characters.popleft()
             end = characters.pop()
 
+            #logic for determining palindrome
             palin_answer = bool(beginning == end)
 
     return palin_answer

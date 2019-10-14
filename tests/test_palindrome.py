@@ -65,3 +65,10 @@ def test_this_sentence_is_looooong():
     """
 
     assert is_palindrome("Able was I ere I saw Elba") is True
+
+def test_sister():
+    """
+    My sister is a palindrome... I can use her to test case
+    """
+
+    assert is_palindrome("HanNah") is True
