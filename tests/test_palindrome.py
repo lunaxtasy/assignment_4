@@ -36,3 +36,10 @@ def test_bb_is_a_palindrome():
     """
 
     assert is_palindrome("bb") is True
+
+def test_abc_is_not_a_palindrome():
+    """
+    `(/1)` `is_palindrome` returns `False` is called with `"abc"`.
+    """
+
+    assert is_palindrome("abc") is False

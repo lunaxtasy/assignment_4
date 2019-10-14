@@ -39,5 +39,7 @@ def is_palindrome(word):
 
             if beginning == end:
                 palin_answer = True
+            else:
+                palin_answer = False
 
     return palin_answer
