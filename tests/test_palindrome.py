@@ -15,3 +15,11 @@ def test_is_string():
 
     with pytest.raises(ValueError):
         is_palindrome(1881)
+
+def test_empty_string():
+    """
+    `(/1)` `is_palindrome` returns `False` when called with an empty string.
+    """
+
+    assert is_palindrome("") is None
+    assert is_palindrome(" ") is None
