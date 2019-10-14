@@ -22,4 +22,10 @@ def test_empty_string():
     """
 
     assert is_palindrome("") is None
-    assert is_palindrome(" ") is None
+
+def test_a_is_a_palindrome():
+    """
+    `(/1)` `is_palindrome` returns `True` if called with `"a"`.
+    """
+
+    assert is_palindrome("a") is True
