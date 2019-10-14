@@ -43,3 +43,10 @@ def test_abc_is_not_a_palindrome():
     """
 
     assert is_palindrome("abc") is False
+
+def test_laval_is_a_palindrome():
+    """
+    `(/1)` `is_palindrome` returns `True` when called with `"laval"`.
+    """
+
+    assert is_palindrome("laval") is True
