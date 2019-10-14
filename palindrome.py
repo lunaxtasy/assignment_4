@@ -15,7 +15,8 @@ def is_palindrome(word):
 
     if isinstance(word, str) is False:
         raise ValueError
-    elif not word.strip():
+
+    if not word.strip():
         palin_answer = False
 
     return palin_answer
