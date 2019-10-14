@@ -20,7 +20,7 @@ def is_palindrome(word):
 
     #checks length of deque, returns False for no characters in string
 
-    if len(deque(word)) < 1:
+    if (not (word and word.strip())):
         palin_answer = False
 
     return palin_answer
