@@ -25,6 +25,7 @@ def is_palindrome(word):
         palin_answer = False
 
     #creating deque, also eliminating possibility of case-in-middle_of_word issue
+    #also does not add spaces or punctuation to deque for checking sentences
 
     characters = deque(re.sub(r"[^a-z0-9]", "", word.lower()))
 
