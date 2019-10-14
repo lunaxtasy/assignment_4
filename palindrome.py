@@ -26,7 +26,7 @@ def is_palindrome(word):
 
     #creating deque, also eliminating possibility of case-in-middle_of_word issue
 
-    characters = deque(re.sub(r"[^a-z0-9]","",word.lower()))
+    characters = deque(re.sub(r"[^a-z0-9]", "", word.lower()))
 
     #checking deque length, lengths of 1 are palindromes by their nature, either
     #as one letter or the middle letter.
