@@ -37,9 +37,6 @@ def is_palindrome(word):
             beginning = characters.popleft()
             end = characters.pop()
 
-            if beginning == end:
-                palin_answer = True
-            else:
-                palin_answer = False
+            palin_answer = bool(beginning == end)
 
     return palin_answer
