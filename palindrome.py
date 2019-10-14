@@ -27,7 +27,8 @@ def is_palindrome(word):
 
     characters = deque(word.lower())
 
-    #checking deque length, lengths of 1 are palindromes by their nature, either as one letter or the middle letter.
+    #checking deque length, lengths of 1 are palindromes by their nature, either
+    # as one letter or the middle letter.
     #Lengths of greater than or equal to 2 require matching
 
     if len(characters) == 1:
